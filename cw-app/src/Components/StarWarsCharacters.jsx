@@ -7,14 +7,13 @@ class StarWarsCharacters extends Component {
     };
 
     componentDidMount() {
-        getSomeStuff();
+        this.getSomeStuff();
     };
 
     getSomeStuff = async () => {
         let SomeStuff = await fetch('https://swapi.co/api/people/');
         let StarWarsStuff = await SomeStuff.json();
         console.log(StarWarsStuff);
-        console.table(StarWarsStuff);
     };
 
     render() {
