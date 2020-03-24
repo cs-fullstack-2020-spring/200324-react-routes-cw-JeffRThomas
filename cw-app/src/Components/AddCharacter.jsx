@@ -39,17 +39,22 @@ class AddCharacter extends Component {
                 <form>
                     <fieldset>
                         <legend>Enter A New Character</legend>
+                        <div>
+                            <label htmlFor="nameField">Name: </label>
+                            <input type="text" id="nameField" value={this.state.Name} placeholder="Enter a name" onChange={this.nameHandler}></input>
+                        </div>
 
-                        <label htmlFor="nameField">Name: </label>
-                        <input type="text" id="nameField" value={this.state.Name} placeholder="Enter a name" onChange={this.nameHandler}></input>
+                        <div>
+                            <label htmlFor="birthField">Birth Year: </label>
+                            <input type="date" id="birthField" value={this.state.BirthYear} placeholder="MM/DD/YYYY" onChange={this.birthHandler}></input>
+                        </div>
 
-                        <label htmlFor="birthField">Birth Year: </label>
-                        <input type="date" id="birthField" value={this.state.BirthYear} placeholder="MM/DD/YYYY" onChange={this.birthHandler}></input>
+                        <div>
+                            <label htmlFor="genderField">Gender: </label>
+                            <input id="genderField" value={this.state.Gender} placeholder="Male of Female?" onChange={this.genderHandler}></input>
+                        </div>
 
-                        <label htmlFor="genderField">Gender: </label>
-                        <input id="genderField" value={this.state.Gender} placeholder="Male of Female?" onChange={this.genderHandler}></input>
-
-                        <button onClick={this.gotNewCharacter}>Submit Character</button>
+                        <button onClick={this.gotNewCharacter}>Submit New Character</button>
                     </fieldset>
                 </form>
             </Fragment>

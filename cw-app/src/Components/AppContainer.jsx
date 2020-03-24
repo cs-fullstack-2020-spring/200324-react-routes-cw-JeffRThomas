@@ -12,21 +12,12 @@ class AppContainer extends Component {
                 {/* AppContainer is present */}
                 <h1>React Routes CW</h1>
                 <Router>
-                    <div>
-                        <Link to="/">Home</Link>
-                    </div>
-
-                    <div>
-                        <Link to="/StarWarsCharacters">StarWarsCharacters</Link>
-                    </div>
-
-                    <div>
-                        <Link to="/AddCharacter">AddCharacter</Link>
-                    </div>
-
+                    <Link to="/">AppContainer</Link>
+                    <br />
+                    <Link to="/StarWarsCharacters">StarWarsCharacters</Link>
                     <route path="./StarWarsCharacters"><StarWarsCharacters /></route>
-                    <route path="./AddCharacter"><AddCharacter /></route>
                 </Router>
+                <AddCharacter/>
             </Fragment>
         )
     };

@@ -29,6 +29,14 @@ class StarWarsCharacters extends Component {
             <Fragment>
                 {/* Component Roll Call */}
                 {/* StarWarsCharacters is present */}
+                {/* Starting to build Map Method But Ran Out Of Time */}
+                {this.state.StarWarsCharacters.map((character)=>{
+                    return(
+                        <div>
+                            <p>Name: {character.name}</p>
+                        </div>
+                    )
+                })}
             </Fragment>
         )
     };
