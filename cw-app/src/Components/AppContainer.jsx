@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Fragment } from 'react';
 import StarWarsCharacters from './StarWarsCharacters';
+import AddCharacter from './AddCharacter';
 
 class AppContainer extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class AppContainer extends Component {
                 {/* AppContainer is present */}
                 <h1>React Routes CW</h1>
                 <StarWarsCharacters />
+                <AddCharacter />
             </Fragment>
         )
     };
