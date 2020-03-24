@@ -4,6 +4,9 @@ import { Fragment } from 'react';
 class StarWarsCharacters extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            StarWarsCharacters: []
+        };
     };
 
     componentDidMount() {
@@ -16,6 +19,9 @@ class StarWarsCharacters extends Component {
         let StarWarsStuff = await SomeStuff.json();
         // Verify data fetch was successful
         console.log(StarWarsStuff);
+        console.log(StarWarsStuff.results);
+        this.setState({ StarWarsCharacters: StarWarsStuff.results })
+        console.log(this.state);
     };
 
     render() {
@@ -23,6 +29,7 @@ class StarWarsCharacters extends Component {
             <Fragment>
                 {/* Component Roll Call */}
                 {/* StarWarsCharacters is present */}
+
             </Fragment>
         )
     };

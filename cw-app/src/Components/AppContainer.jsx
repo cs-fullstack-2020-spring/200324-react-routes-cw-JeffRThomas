@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Fragment } from 'react';
+import { Router } from 'react-router-dom';
 import StarWarsCharacters from './StarWarsCharacters';
 import AddCharacter from './AddCharacter';
 
