@@ -29,7 +29,6 @@ class StarWarsCharacters extends Component {
             <Fragment>
                 {/* Component Roll Call */}
                 {/* StarWarsCharacters is present */}
-
             </Fragment>
         )
     };
