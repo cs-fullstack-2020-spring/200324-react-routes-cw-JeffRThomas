@@ -11,8 +11,10 @@ class StarWarsCharacters extends Component {
     };
 
     getSomeStuff = async () => {
+        // Obtain data from external data source (API)
         let SomeStuff = await fetch('https://swapi.co/api/people/');
         let StarWarsStuff = await SomeStuff.json();
+        // Verify data fetch was successful
         console.log(StarWarsStuff);
     };
 
