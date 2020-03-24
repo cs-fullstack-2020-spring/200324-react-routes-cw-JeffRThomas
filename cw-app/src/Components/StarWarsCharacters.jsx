@@ -5,7 +5,7 @@ class StarWarsCharacters extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            StarWarsCharacters: []
+            StarWarsCharacters: [] // variables start with a lower case letter
         };
     };
 
@@ -19,12 +19,13 @@ class StarWarsCharacters extends Component {
         let StarWarsStuff = await SomeStuff.json();
         // Verify data fetch was successful
         console.log(StarWarsStuff);
-        console.log(StarWarsStuff.results);
+        console.log(StarWarsStuff.results); // nice job testing!
         this.setState({ StarWarsCharacters: StarWarsStuff.results })
         console.log(this.state);
     };
 
     render() {
+        // you should be displaying three properties of the object in map
         return (
             <Fragment>
                 {/* Component Roll Call */}

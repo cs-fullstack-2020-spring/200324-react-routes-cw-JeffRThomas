@@ -6,6 +6,8 @@ import AddCharacter from './AddCharacter';
 
 class AppContainer extends Component {
     render() {
+        // route starts with a capital R - your imported it correctly but referenced it incorrectly
+        // also route and path should match - no dot necessary
         return (
             <Fragment>
                 {/* Component Roll Call */}
