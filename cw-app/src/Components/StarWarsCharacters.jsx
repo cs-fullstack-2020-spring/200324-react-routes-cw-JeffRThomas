@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Fragment } from 'react';
-import StarWarsCharacters from './StarWarsCharacters';
 
-class AppContainer extends Component {
+class StarWarsCharacters extends Component {
     constructor(props) {
         super(props);
     };
@@ -11,12 +10,10 @@ class AppContainer extends Component {
         return (
             <Fragment>
                 {/* Component Roll Call */}
-                {/* AppContainer is present */}
-                <h1>React Routes CW</h1>
-                <StarWarsCharacters />
+                StarWarsCharacters is present
             </Fragment>
         )
     };
 };
 
-export default AppContainer;
+export default StarWarsCharacters;
